@@ -1,0 +1,8 @@
+.blob {
+  position: fixed;
+  top: -10vw;
+  left: -10vw;
+  bottom: -10vw;
+  height: 120vh;
+  z-index: -2;
+}

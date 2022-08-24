@@ -1,0 +1,48 @@
+.storeCard {
+  background-color: var(--color-reverse);
+  color: var(--color-ink);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-l);
+  overflow: hidden;
+  /* padding: 0 0 var(--space-m); */
+  filter: var(--shadow-s);
+}
+
+.storeCard.hidden {
+  display: none;
+}
+
+.storeImages {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow-x: auto;
+}
+
+.storeImage {
+  height: 30vh;
+  width: auto;
+}
+
+.storeDetails {
+  /* flex-grow: 1; */
+  padding: var(--space-m);
+  text-align: left;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  margin: var(--space-m);
+}
+
+.review {
+  background-color: var(--color-reverse);
+  color: var(--color-ink);
+  padding: var(--space-s);
+  border: 1px solid var(--color-orange);
+  border-radius: var(--border-radius-s);
+  margin: 0;
+}

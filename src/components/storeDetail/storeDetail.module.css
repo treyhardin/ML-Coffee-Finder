@@ -1,0 +1,118 @@
+.detailModalWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: var(--space-l);
+}
+
+.modalClose {
+  background: transparent;
+  color: var(--color-reverse);
+  width: 30px;
+  margin-left: -30px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+}
+
+.detailModal {
+  /* flex: 0 0 80vw; */
+  background-color: var(--color-reverse);
+  color: var(--color-ink);
+  border-radius: var(--border-radius-l);
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  overflow: auto;
+  max-width: 1024px;
+}
+
+
+.detailText {
+  flex: 0 0 40%;
+  padding: var(--space-l);
+  position: sticky;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  /* bottom: 0; */
+}
+
+.storeImages {
+}
+
+.storeImage {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.rateButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--space-s);
+  margin: 0 0 var(--space-m);
+}
+
+.rateButtons button {
+  flex: 0 0 40px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  padding: 0;
+  border-radius: 100vw;
+  background-color: transparent;
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--easing-default);
+}
+
+.rateButtons button:hover {
+  background-color: var(--color-green);
+  color: var(--color-reverse);
+  border-color: var(--color-green);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  /* flex-grow: 1; */
+  /* overflow: auto; */
+  /* margin: var(--space-m); */
+}
+
+.reviewsLabel {
+  margin: 0;
+}
+
+.review {
+  background-color: var(--color-reverse);
+  color: var(--color-ink);
+  padding: var(--space-s);
+  border: 1px solid var(--color-orange);
+  border-radius: var(--border-radius-s);
+  margin: 0;
+}
+
+.detailsButton {
+  color: inherit;
+  align-self: center;
+}
+
+.buttonUtility svg {
+  width: 50%;
+}

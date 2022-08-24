@@ -1,0 +1,74 @@
+.resultsSidebar {
+  flex: 0 1 40%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--header-height) 0 0 var(--page-margin);
+}
+
+.filterList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin: var(--space-l) 0 0;
+}
+
+.filterButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 100vw;
+  border: 1px solid var(--color-reverse);
+  color: var(--color-reverse);
+  background: none;
+  padding: 0 var(--space-m);
+  gap: var(--space-s);
+  cursor: pointer;
+  transition: var(--easing-default);
+  flex-shrink: 0;
+}
+
+.filterButton:hover {
+  border: 1px solid var(--color-orange);
+}
+
+.filterButton.active {
+  background-color: var(--color-reverse);
+  color: var(--color-ink);
+}
+
+.filterButton svg {
+  width: 20px;
+  height: 50px;
+  transition: var(--easing-default);
+  pointer-events: none;
+}
+
+.filterButton.active svg {
+  transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+  .resultsSidebar {
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .filterListWrapper {
+    overflow-x: auto;
+    margin-left: calc(var(--space-l) * -1);
+    margin-right: calc(var(--space-l) * -1);
+    max-width: calc(100% + (var(--space-l) * 2));
+    padding: 0 var(--space-l) var(--space-m);
+  }
+
+  .filterList {
+    flex-wrap: nowrap;
+  }
+}

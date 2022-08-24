@@ -1,0 +1,29 @@
+.header {
+  height: var(--header-height);
+  color: var(--color-reverse);
+  padding: 0 var(--page-margin);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logoLink {
+  border: none;
+}
+
+.header svg {
+  width: 160px;
+}
+
+.trainModeBadge {
+  margin-left: var(--space-s);
+  background-color: var(--color-reverse);
+  color: var(--color-orange);
+  padding: 4px var(--space-s);
+  border-radius: var(--space-l);
+}

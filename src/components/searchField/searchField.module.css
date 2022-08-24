@@ -1,0 +1,68 @@
+.searchField {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-s);
+  margin: var(--space-l) 0;
+  align-self: stretch;
+  position: relative;
+}
+
+.searchInput {
+  flex-grow: 1;
+}
+
+.searchField svg {
+  width: 24px;
+}
+
+.fieldButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--space-l);
+  color: var(--color-orange);
+  background-color: transparent;
+  padding: 0;
+}
+
+.submitButton {
+  display: none;
+}
+
+.resultsList {
+  background-color: var(--color-reverse);
+  border-radius: var(--border-radius-l);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--field-height) + 1px);
+  margin: 0;
+  padding: 0 var(--space-l);
+  max-height: calc(var(--field-height) * 3);
+  overflow-y: auto;
+}
+
+.resultItem {
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-ink);
+  list-style: none;
+  padding: var(--space-m) 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left top;
+  cursor: pointer;
+}
+
+.resultText {
+  margin: 0;
+}
+
+.resultItem svg {
+  width: 26px;
+  color: inherit;
+}
+
+.resultItem:last-child {
+  border-bottom: none;
+}

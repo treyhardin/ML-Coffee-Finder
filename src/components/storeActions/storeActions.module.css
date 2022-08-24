@@ -1,0 +1,32 @@
+.storeActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--space-s);
+  margin: 0 0 var(--space-m);
+}
+
+.storeActions button {
+  flex: 0 0 40px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  padding: 0;
+  border-radius: 100vw;
+  background-color: transparent;
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--easing-default);
+}
+
+.storeActions button:hover {
+  background-color: var(--color-green);
+  color: var(--color-reverse);
+  border-color: var(--color-green);
+}
+
+.storeActions button svg {
+  width: 50%;
+}
