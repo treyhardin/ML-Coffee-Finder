@@ -18,6 +18,8 @@ const SearchField = (props) => {
 
   const getCoordinates = (query) => {
 
+    console.log('fetching')
+
     let APIKey  = import.meta.env.VITE_MAPS_API
     let coordinateURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${APIKey}`
     fetch(coordinateURL)
@@ -62,9 +64,9 @@ const SearchField = (props) => {
 
   const handleBlur = (e) => {
     console.log(e)
-    if (!inputField.contains(e.relatedTarget)) {
-      return setSearchMatches([])
-    }
+    // if (!inputField.contains(e.relatedTarget)) {
+    //   return setSearchMatches([])
+    // }
   }
 
   return (
