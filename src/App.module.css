@@ -14,3 +14,10 @@
   /* overflow: hidden; */
   overflow: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

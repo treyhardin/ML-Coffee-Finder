@@ -183,8 +183,13 @@ input {
 
 @media screen and (max-width: 768px) {
   :root {
-    --page-margin: 30px;
+    --page-margin: 20px;
     --field-height: 60px;
+    --header-height: 80px;
+
+    --space-s: 10px;
+    --space-m: 15px;
+    --space-l: 20px;
   }
   .content {
     flex-direction: column;
@@ -211,6 +216,7 @@ input {
   }
   input {
     height: 60px;
+    --pixels: 16;
   }
   
 }

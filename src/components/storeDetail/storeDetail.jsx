@@ -47,7 +47,7 @@ function StoreDetail(props) {
 
         <div class={styles.storeImages}>
           {props.images.map((image) => {
-            return <img src={image.prefix + '800x800' + image.suffix} class={styles.storeImage} />
+            return <img src={image.prefix + '1280x1280' + image.suffix} class={styles.storeImage} />
           })}
         </div>
 

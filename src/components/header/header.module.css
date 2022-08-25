@@ -10,10 +10,12 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 
 .logoLink {
   border: none;
+  z-index: 3;
 }
 
 .header svg {

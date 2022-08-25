@@ -21,8 +21,8 @@
 }
 
 .storeImage {
-  height: 30vh;
-  width: auto;
+  /* height: 30vh; */
+  width: 100%;
 }
 
 .storeDetails {

@@ -58,6 +58,8 @@
   .resultsSidebar {
     flex-shrink: 0;
     position: relative;
+    padding: var(--header-height) var(--page-margin) 0;
+    flex-basis: auto;
   }
 
   .filterListWrapper {

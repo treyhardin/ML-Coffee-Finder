@@ -98,11 +98,9 @@ const StoreCard = (props) => {
       />
     ) : null }
     <div class={styles.storeCard} ref={storeCardRef}>
-      <div class={styles.storeImages}>
-        {props.images.map((image) => {
-          return <img src={image.prefix + '800x800' + image.suffix} class={styles.storeImage} />
-        })}
-      </div>
+      {props.images.length > 0 ? (
+        <img src={props.images[0].prefix + '1024x800' + props.images[0].suffix} class={styles.storeImage} />
+      ) : null }
       <div class={styles.storeDetails}>
         <h5>{props.name}</h5>
         <p>{props.address}</p>

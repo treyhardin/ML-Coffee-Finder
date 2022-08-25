@@ -25,7 +25,13 @@
   padding-bottom: var(--space-l);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .storeCardList {
+    padding: 0 var(--page-margin) 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .storeCards {
     grid-template-columns: 1fr;
   }
